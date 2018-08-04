@@ -1,0 +1,31 @@
+﻿      System.out.println("Enter Numbers :[وتر],[ضلع دوم],[ضلع اول]");
+        Scanner input = new Scanner(System.in);
+//
+//        double[] arrayOfNumbers = new double[3];
+//
+//        for (int i = 0; i < arrayOfNumbers.length; i++) {
+//
+//            arrayOfNumbers[i] = input.nextDouble();
+//
+//        }
+
+        phythagorasMethod(input.nextDouble(), input.nextDouble(), input.nextDouble());
+
+    }
+
+    // The Phythagoras Method ...
+    public static void phythagorasMethod(double a, double b, double c) {
+
+        double phythagoras = Math.pow(a, 2) + Math.pow(b, 2);
+
+        if (Math.sqrt(phythagoras) == c) {
+
+            System.out.println("That's right !!!");
+
+        } else {
+
+            System.out.println("That's wrong !!!");
+
+        }
+
+    }
